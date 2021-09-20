@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20210920 10:29:52.099" rpa="false" schemaversion="2">
+<suite id="s1" name="Kabum" source="C:\qaninja\robot\Kabum\tests\kabum.robot">
+<test id="s1-t1" name="Selecione uma categoria no menu de “Departamento” e adicione um produto no carrinho (Não precisa estar logado). E valide se o produto está no carrinho.">
+<kw name="Nova sessão" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210920 10:29:52.355" level="INFO">Opening browser 'chrome' to base url 'https://www.kabum.com.br'.</msg>
+<status status="PASS" starttime="20210920 10:29:52.354" endtime="20210920 10:30:02.779"/>
+</kw>
+<status status="PASS" starttime="20210920 10:29:52.354" endtime="20210920 10:30:02.779"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>id:informaticaMenuSuperior</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210920 10:30:02.781" level="INFO">Clicking link 'id:informaticaMenuSuperior'.</msg>
+<status status="PASS" starttime="20210920 10:30:02.781" endtime="20210920 10:30:06.765"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:sc-dliRfk jbxMFH</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210920 10:30:06.766" level="INFO">Clicking element 'class:sc-dliRfk jbxMFH'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210920 10:30:07.171" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-78.png"&gt;&lt;img src="selenium-screenshot-78.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210920 10:30:06.780" endtime="20210920 10:30:07.171"/>
+</kw>
+<msg timestamp="20210920 10:30:07.175" level="FAIL">Element with locator 'class:sc-dliRfk jbxMFH' not found.</msg>
+<status status="FAIL" starttime="20210920 10:30:06.766" endtime="20210920 10:30:07.175"/>
+</kw>
+<kw name="Encerrar sessão" library="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210920 10:30:07.629" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-79.png"&gt;&lt;img src="selenium-screenshot-79.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210920 10:30:07.177" endtime="20210920 10:30:07.629"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210920 10:30:07.629" endtime="20210920 10:30:10.008"/>
+</kw>
+<status status="PASS" starttime="20210920 10:30:07.177" endtime="20210920 10:30:10.008"/>
+</kw>
+<status status="FAIL" starttime="20210920 10:29:52.353" endtime="20210920 10:30:10.009">Element with locator 'class:sc-dliRfk jbxMFH' not found.</status>
+</test>
+<status status="FAIL" starttime="20210920 10:29:52.100" endtime="20210920 10:30:10.010"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Kabum">Kabum</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
